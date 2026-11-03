@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #10101b;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(120deg, #fe2c55, #7c35c9);
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #202033;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #444;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #fe2c55;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d91d43;
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}/* Professional Dashboard Design */
+
+.card {
+    background: linear-gradient(145deg, #202033, #292943);
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #fe2c55;
+    box-shadow: 0 5px 20px rgba(254,44,85,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(254,44,85,0.3);
+}
+
+h2 {
+    color: #ff4d79;
+}
+
+input, select {
+    transition: 0.3s;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border: 2px solid #fe2c55;
+}
+
+button {
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.result {
+    background: #151525;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #ffffff;
+}.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.nav-links a:hover {
+    color: #ff4d79;
+}
