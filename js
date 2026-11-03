@@ -110,6 +110,7 @@ function generateHashtags() {
         "\nComments: " + comments;
 
     alert("Video statistics saved successfully!");
+    updateDashboard();
 }function updateDashboard() {
 
     let videos = JSON.parse(
@@ -138,4 +139,5 @@ function generateHashtags() {
 
     document.getElementById("engagement").innerText =
         engagement + "%";
-}
+}// Update dashboard when website opens
+updateDashboard();
